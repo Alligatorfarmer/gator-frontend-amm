@@ -12,16 +12,12 @@ export interface ThemeContextType {
 const ThemeContext = React.createContext<ThemeContextType>({ isDark: false, toggleTheme: () => null })
 
 const ThemeContextProvider: React.FC = ({ children }) => {
-  const [isDark, setIsDark] = useState(() => {
-    const isDarkUserSetting = localStorage.getItem(CACHE_KEY)
-    return isDarkUserSetting ? JSON.parse(isDarkUserSetting) : false
-  })
+  const [isDark, setIsDark] = useState(true)
 
   const handleSetup = useCallback(event=>{
     if(event && event.data && typeof event.data === "string" && event.data.startsWith("[iFrameSizer]message:")){
       const dataStr = event.data.substring("[iFrameSizer]message:".length);
-      const data = JSON.parse(dataStr);
-      console.log("data.isDark", data.isDark);
+      const data = JSON.parse(dataStr);      
       setIsDark(()=>data.isDark);
     }
   }, []);
@@ -33,15 +29,12 @@ const ThemeContextProvider: React.FC = ({ children }) => {
   }, [handleSetup]);
 
   const toggleTheme = () => {
-    setIsDark((prevState: any) => {
-      localStorage.setItem(CACHE_KEY, JSON.stringify(!prevState))
-      return !prevState
-    })
+    return false;
   }
 
   return (
     <ThemeContext.Provider value={{ isDark, toggleTheme }}>
-      <SCThemeProvider theme={isDark ? dark : light}>{children}</SCThemeProvider>
+      <SCThemeProvider theme={dark}>{children}</SCThemeProvider>
     </ThemeContext.Provider>
   )
 }

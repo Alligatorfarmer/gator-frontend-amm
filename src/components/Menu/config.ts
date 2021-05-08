@@ -22,14 +22,19 @@ const config: MenuEntry[] = [
     ]
   },
   {
-    label: 'Farms',
+    label: 'Gator Swamp',
     icon: 'FarmIcon',
     href: 'https://www.vikingswap.finance/farms'
   },
   {
-    label: 'Armory',
+    label: 'Gator Pools',
     icon: 'PoolIcon',
     href: 'https://www.vikingswap.finance/nests'
+  },
+  {
+    label: 'Referral',
+    icon: 'GroupsIcon',
+    href: '/referral',
   },
   {
     label: 'Info',
@@ -66,11 +71,6 @@ const config: MenuEntry[] = [
         href: "https://viking-swap.medium.com/",
       },
     ],
-  },
-  {
-    label: 'Audit by Hacken',
-    icon: 'HelmetIcon',
-    href: 'https://www.vikingswap.finance/files/vikingHackenAudit.pdf',
   },
 ]
 

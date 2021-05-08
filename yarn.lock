@@ -1982,9 +1982,9 @@
     tiny-warning "^1.0.3"
     toformat "^2.0.0"
 
-"@pancakeswap-libs/uikit@VikingDefi/viking-uikit":
+"@pancakeswap-libs/uikit@Alligatorfarmer/gator-uikit":
   version "0.10.2"
-  resolved "https://codeload.github.com/VikingDefi/viking-uikit/tar.gz/8c0fa92dbdcf8f7428007fa7ecd60c84e3d528f4"
+  resolved "https://codeload.github.com/Alligatorfarmer/gator-uikit/tar.gz/651497451403327db15b1ac5d31c884f58e34e08"
   dependencies:
     "@types/lodash" "^4.14.162"
     "@types/styled-system" "^5.1.10"
