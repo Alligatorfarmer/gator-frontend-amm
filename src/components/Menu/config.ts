@@ -4,7 +4,7 @@ const config: MenuEntry[] = [
   {
     label: 'Home',
     icon: 'HomeIcon',
-    href: 'https://www.vikingswap.finance/'
+    href: 'https://gatorswap.xyz/'
   },
   {
     label: 'Trade',
@@ -24,17 +24,17 @@ const config: MenuEntry[] = [
   {
     label: 'Gator Swamp',
     icon: 'FarmIcon',
-    href: 'https://www.vikingswap.finance/farms'
+    href: 'https://gatorswap.xyz/farms'
   },
   {
     label: 'Gator Pools',
     icon: 'PoolIcon',
-    href: 'https://www.vikingswap.finance/nests'
+    href: 'https://gatorswap.xyz/nests'
   },
   {
     label: 'Referral',
     icon: 'GroupsIcon',
-    href: '/referral',
+    href: 'https://gatorswap.xyz/referral',
   },
   {
     label: 'Info',
@@ -42,16 +42,8 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'PancakeSwap',
-        href: 'https://pancakeswap.info/token/0x896eDE222D3f7f3414e136a2791BDB08AAa25Ce0',
-      },
-      {
-        label: 'CoinMarketCap',
-        href: 'https://coinmarketcap.com/currencies/viking-swap/',
-      },
-      {
-        label: 'CoinGecko',
-        href: 'https://www.coingecko.com/en/coins/viking-swap',
-      },
+        href: 'https://pancakeswap.info/token/...',
+      },      
     ]
   },
   {
@@ -60,15 +52,11 @@ const config: MenuEntry[] = [
     items: [
       {
         label: "Github",
-        href: "https://github.com/VikingDefi/",
-      },
-      {
-        label: "Docs",
-        href: "https://vikingswap.gitbook.io/viking-swap/",
+        href: "https://github.com/Alligatorfarmer",
       },
       {
         label: "Blog",
-        href: "https://viking-swap.medium.com/",
+        href: "https://gator-swap.medium.com/",
       },
     ],
   },
