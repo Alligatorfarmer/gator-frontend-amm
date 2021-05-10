@@ -1982,9 +1982,9 @@
     tiny-warning "^1.0.3"
     toformat "^2.0.0"
 
-"@pancakeswap-libs/uikit@Alligatorfarmer/gator-uikit":
+"@pancakeswap-libs/uikit@https://github.com/Alligatorfarmer/gator-uikit":
   version "0.10.2"
-  resolved "https://codeload.github.com/Alligatorfarmer/gator-uikit/tar.gz/651497451403327db15b1ac5d31c884f58e34e08"
+  resolved "https://github.com/Alligatorfarmer/gator-uikit#63f25046e2322fd6f5e20b89d4c23fe8c2564eb1"
   dependencies:
     "@types/lodash" "^4.14.162"
     "@types/styled-system" "^5.1.10"
